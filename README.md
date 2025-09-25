@@ -1,69 +1,59 @@
-# React + TypeScript + Vite
+# Projeto de React + Vite utilizando Typescript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### Link do projeto:
+🚀 [Aplicação online no Firebase](https://alessandra-bday.web.app/)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
+- [Vite](https://vite.dev/)
+- [Firebase](https://firebase.google.com/)
+- [TailwindCSS](https://tailwindcss.com/) com [plugin oficial para Vite](https://tailwindcss.com/docs/installation/using-vite)
+- [Hero Icons](https://heroicons.com/)
+- [Typescript](https://www.typescriptlang.org/)
+- [React](https://react.dev/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Como clonar o projeto na sua maquina e executar 
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+##### Primeiro você clona o projeto
+```shell
+git clone https://github.com/CodingAsOne/bday-confirmation.git
+```
+##### Acessa o diretório do projeto
+```
+cd bday-confirmation
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+##### Instala as dependencias
 ```
+npm install
+```
+
+##### Para rodar o projeto em modo desenvolvimento:
+```
+npm start
+```
+ou
+```
+npm run dev
+```
+--
+
+<details>
+  <summary><h5>Para testar o build localmente</h5></summary>
+
+```
+npm run build
+npm run preview
+```
+  
+</details>
+
+</details> <details> <summary><h5>Rodar build + iniciar projeto (modo completo)</h5></summary>
+
+```
+npm run build-start
+```
+
+</details> 
